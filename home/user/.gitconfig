@@ -1,0 +1,26 @@
+[core]
+  editor="vim"
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[user]
+  email="214601936+reddykartik@users.noreply.github.com"
+  name="reddykartik"
+[http]
+  postBuffer=524288000
+[alias]
+  tree=log --graph --decorate --pretty=online --abbrev-commit --all
+[credential]
+  helper=manager
+[color]
+  ui=auto
+[filter "lfs"]
+  process=git-lfs filter-process
+  required=true
+  clean=git-lfs clean -- %f
+  smudge=git-lfs smudge -- %f
+[merge]
+  conflictStyle=diff3
+[magit]
+  hideCampagin=true
+[init]
+  defaultBranch=master
+
