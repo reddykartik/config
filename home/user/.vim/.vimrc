@@ -35,4 +35,4 @@ se fo-=t
 set exrc
 set secure
 runtime! ftplugin/man.vim
-
+set foldmethod=marker

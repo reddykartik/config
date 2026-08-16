@@ -9,7 +9,7 @@
 [alias]
   tree=log --graph --decorate --pretty=online --abbrev-commit --all
 [credential]
-  helper=manager
+#  helper=manager
 [color]
   ui=auto
 [filter "lfs"]
