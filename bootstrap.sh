@@ -15,10 +15,10 @@ while read -r file; do
   destination="$file"
   if [[ "$destination" == /etc/* ]]; then
     sudo mkdir -p "$(dirname "$destination")"
-    sudo ln -sf "$source" "$destination"
+    sudo ln -sfn "$source" "$destination"
   else 
     mkdir -p "$(dirname "$destination")"
-    ln -sf "$source" "$destination"
+    ln -sfn "$source" "$destination"
   fi
 done
 
